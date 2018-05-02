@@ -6,10 +6,12 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
     if (document.body.scrollTop > 1920|| document.documentElement.scrollTop >  1920) {
-        body.style.backgroundColor = "tomato";
+        body.style.backgroundColor = "blue";
+        demo.innerHTML = "Vertically: " + 2200 + "px";
 
     } else if (document.body.scrollTop < 960 || document.documentElement.scrollTop > 960) {
-        body.style.backgroundColor = "blue";
+        body.style.backgroundColor = "tomato";
+        demo.innerHTML = "Vertically: " + 0 + "px";
 
 
     } else {
